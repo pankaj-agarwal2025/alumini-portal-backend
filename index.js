@@ -24,7 +24,10 @@ cloudinary.config({
 
 app.use(express.static('public')); 
 app.use(express.json());
-app.use(cors({origin:"*"}));
+app.use(cors({
+  origin: "https://alumini-portal-pi.vercel.app",
+  credentials: true // if you're using cookies or auth headers
+}));
 app.use(express.urlencoded({ extended: true }));
 
 app.use(express.static(path.join(__dirname, 'public')));
