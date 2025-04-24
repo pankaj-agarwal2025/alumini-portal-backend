@@ -25,11 +25,11 @@ cloudinary.config({
 app.use(express.static('public')); 
 app.use(express.json());
 app.use(cors({
-  origin: "https://alumini-portal-psi.vercel.app/",
+  origin: "https://alumni.soet-krmu.com/",
   credentials: true // if you're using cookies or auth headers
 }));
 app.use((req, res, next) => {
-  res.header("Access-Control-Allow-Origin", "https://alumini-portal-pi.vercel.app");
+  res.header("Access-Control-Allow-Origin", "https://alumni.soet-krmu.com/");
   res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept, Authorization");
   res.header("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS");
   res.header("Access-Control-Allow-Credentials", "true");
