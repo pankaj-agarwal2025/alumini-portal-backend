@@ -25,7 +25,7 @@ cloudinary.config({
 app.use(express.static('public')); 
 app.use(express.json());
 app.use(cors({
-  origin: "https://alumini.soet-krmu.com",
+  origin: "https://alumni.soet-krmu.com",
   credentials: true
 }));
 app.use(express.urlencoded({ extended: true }));
